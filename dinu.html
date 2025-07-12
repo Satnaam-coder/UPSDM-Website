@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard_styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Your Dashboard</h1>
+        <!-- Add navigation menu or user profile section here -->
+    </header>
+    
+    <div class="container">
+        <div class="user-profile">
+            <h2>User Profile</h2>
+            <form id="profileForm">
+                <div class="textbox">
+                    <input type="text" placeholder="Name (English)" name="nameEnglish" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="नाम (हिंदी)" name="nameHindi" required>
+                </div>
+                <div class="textbox">
+                    <input type="tel" placeholder="Mobile Number" name="mobileNumber" required>
+                </div>
+                <div class="textbox">
+                    <input type="email" placeholder="Email" name="email" required>
+                </div>
+                <div class="textbox">
+                    <input type="text" placeholder="Training Partner" name="trainingPartner" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Password" name="password" required>
+                </div>
+                <div class="textbox">
+                    <input type="password" placeholder="Confirm Password" name="confirmPassword" required>
+                </div>
+                <button type="submit" class="btn">Update Profile</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="dashboard_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset=" UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Login Page</title>
+       <style>
+          body{
+            margin:0;
+            padding:0;
+            font-family: Arial,sans-sarif;
+            background-image: url('coding.jpg');
+            background-size: cover;
+            background-position: center;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            height: 100Vh;
+          } 
+          .login-container{
+            background-color: white;
+            padding: 5px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width:350px;
+            text-align: center;
+            height: 5OOpx;
+          }
+          .login-container img{
+            width:100px;
+            margin-bottom: 10px;
+          }
+          .login-container input{
+            width:70%;
+            padding:10px;
+            margin:10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+          }
+          .login-container button{
+            width: 50%;
+            padding:10px;
+            background-color: #007BFF;
+            color: #ccc;
+            border:none;
+            border-radius: 5px;
+            cursor:pointer;
+            font-size: 16px;
+          }
+          .login-container a{
+            display: block;
+            margin:10px 0;
+            color: #007BFF;
+            text-decoration: none;
+          }
+          .login-container a:hover{
+                    text-decoration: underline;
+          }
+          .error{
+            color:red;
+          }
+
+       </style>
+       </head>
+       <body>
+           <div class=" login-container">
+                   <img src="right-image.png" alt=" logo" >
+                   <h2> Sign in to your account</h2>
+                   <form id=" loginForm">
+                        <label
+                    for=" username"> Username:</label>
+                         <input type=" text"
+                         id="username"
+                         name=" username"><br>
+                                   <label
+                            for=" password"> Password:</label>
+                            <input type=" password" id="password"
+                            name="password"><br>
+                                  <label
+                            for=" captcha"> Captcha:</label>
+                            <input type=" captcha"  id=" captcha"
+                            mame=" captcha"><br>
+                                   
+                                 <button  type=" submit"> SIGN IN </button></form>
+                                 <p id="error" class=" error" ></p>
+                                 <a href="#"> Go To Website</a>
+                                 <a href="#"> Forgot Website</a>
+           </div>
+           <script>
+            ducument.getElimentById( 'loginForm').onsubmit = function(event){
+              event.preventDefault();
+                         const username = ducument.getElimentById('username').value;
+                         const password = ducument.getElimentById(' password').value;
+                         const captcha = ducument.getElimentById(' captcha').value;
+                         const storedUsername = " user1";
+                         const storedPassword = " password1";
+                         const storedcaptcha = " 5B33A";
+                if( username === storedUsername && password === storedPassword && captcha === storedCaptcha){
+                    localStorage.setItem(' isloggedIn', 'true');
+                    window.location.href='dimple.html';
+                }  else{
+                    ducument.getElimentById(' error').textcontent ="Invalid credentials. Please try again.";
+                }
+              };
+           </script>
+       </body>
+       </html>

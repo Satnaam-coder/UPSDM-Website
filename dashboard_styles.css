@@ -1,0 +1,44 @@
+.user-profile {
+    width: 500px;
+    height:400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.user-profile h2 {
+    margin-top: 0;
+    color:blue;
+}
+
+.textbox {
+    margin-bottom: 10px;
+    font-weight: bold;
+    display:grid;
+
+    
+}
+
+.textbox input {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: #27ae60;
+    color: #fff;
+    float: right;
+}
+
+.btn:hover {
+    background: #219653;
+}
